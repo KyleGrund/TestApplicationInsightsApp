@@ -1,0 +1,30 @@
+﻿<Window x:Class="TestApplicationInsightsApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestApplicationInsightsApp"
+        mc:Ignorable="d"
+        Title="Application Insights Example" Height="164.936" Width="575.953"
+        Loaded="Window_Loaded" ResizeMode="NoResize">
+    <GroupBox Header="Event Totals" Height="123" VerticalAlignment="Top">
+        <WrapPanel Orientation="Vertical" Margin="0,0,0,-22">
+            <WrapPanel Orientation="Horizontal">
+                <Label Content="Exceptions:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label x:Name="ExceptionCountLabel" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            </WrapPanel>
+            <WrapPanel Orientation="Horizontal">
+                <Label Content="Warn Events:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label x:Name="WarnCountLabel" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            </WrapPanel>
+            <WrapPanel Orientation="Horizontal">
+                <Label Content="Info Events:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label Name="InfoCountLabel" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            </WrapPanel>
+            <WrapPanel Orientation="Horizontal">
+                <Label Content="Debug Events:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label x:Name="DebugCountLabel" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            </WrapPanel>
+        </WrapPanel>
+    </GroupBox>
+</Window>
